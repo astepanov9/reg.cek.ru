@@ -1,0 +1,186 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: $transition;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  margin-right: 5px;
+}
+
+h1 {
+  color: $white;
+  @extend %montserrat-bold;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 0;
+}
+
+h2 {
+  color: $white;
+  @extend %montserrat-bold;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0;
+}
+
+h3 {
+  color: $primary-color;
+  @extend %montserrat-semibold;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  @extend %montserrat-regular;
+  background-color: $white;
+  color: $primary-color;
+  margin: 10px 10px 0 10px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 14px;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.button {
+  @extend %montserrat-medium;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 21px 45px;
+  background-color: $btn-bg;
+  color: $btn-color;
+  cursor: pointer;
+  border-radius: 30px;
+  outline: none;
+  border: 0;
+  transition: $transition;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+section {
+  margin-top: 45px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+
+  & h2 {
+    color: $primary-color;
+  }
+}
+
+.section-subtitle {
+  text-align: center;
+  margin-bottom: 35px;
+  @extend %montserrat-medium;
+  font-size: 25px;
+  line-height: 20px;
+  color: #515151;
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #fff;
+  z-index: 1001;
+
+  &__image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -32px;
+    margin-left: -32px;
+    background: url('../../public/assets/img/load.gif') no-repeat 50% 50%;
+  }
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.toltip {
+  cursor: pointer;
+}
+
+.tippy-box {
+  background-color: #333333e3;
+}
+
+.tippy-content {
+  text-align: center;
+  @extend %montserrat-regular;
+}
+
+.form-control:focus {
+  border-color: $header-bg;
+  box-shadow: none;
+}
+
+.form-check-input {
+  margin-top: 0;
+}
+
+.form-check {
+  display: flex;
+  & input {
+    margin-right: 3px;
+  }
+}
+
+.thnx {
+  display: none;
+  color: green;
+}

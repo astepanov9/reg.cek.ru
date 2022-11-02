@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reg.cek.ru</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets\css\styles.min.css" />
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader__image"></div>
+    </div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <div class="header__logo">
+              <img src="assets/img/logo.png" alt="лого" />
+            </div>
+            <div class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="#registration" class="header__menu-link">О регистрации ИП/ЮЛ</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#dop" class="header__menu-link">Дополнительные услуги</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#step" class="header__menu-link">Этапы работы</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#contacts" class="header__menu-link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header__phone">
+              <a class="header__phone-link" href="tel:+78314290133">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_9_90)">
+                    <path
+                      d="M19.7854 15.1674C19.0409 13.76 16.4556 12.2339 16.3417 12.1672C16.0095 11.9781 15.6629 11.878 15.3384 11.878C14.8561 11.878 14.4612 12.0989 14.2221 12.5008C13.8439 12.9532 13.3749 13.4819 13.261 13.5638C12.3801 14.1615 11.6905 14.0937 10.9274 13.3306L6.66876 9.07161C5.91054 8.31339 5.84084 7.61523 6.43444 6.7391C6.51749 6.62454 7.04621 6.15514 7.49854 5.77659C7.787 5.60492 7.98499 5.34983 8.07175 5.0369C8.18706 4.62053 8.10216 4.13075 7.83001 3.65357C7.76587 3.54382 6.23904 0.958078 4.83235 0.213946C4.56984 0.0749075 4.27397 0.00149536 3.97736 0.00149536C3.48868 0.00149536 3.02893 0.19207 2.68337 0.537256L1.74236 1.4779C0.254097 2.96579 -0.28463 4.65242 0.140271 6.49069C0.494726 8.0227 1.52769 9.65297 3.21098 11.3359L8.66313 16.788C10.7936 18.9185 12.8246 19.9989 14.7 19.9989C14.7 19.9989 14.7 19.9989 14.7004 19.9989C16.0796 19.9989 17.3654 19.4127 18.5211 18.257L19.4618 17.3164C20.0335 16.745 20.1633 15.8811 19.7854 15.1674Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_9_90">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                (831) 429-13-59
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="header-slider">
+        <div class="container">
+          <div class="slider header-slider__slider">
+            <div class="header-slider__item">
+              <div class="header-slider__info">
+                <h1>Помощь в открытии ИП и ЮЛ</h1>
+                <div class="header-slider__desc">
+                  Зарегистрируйте бизнес электронно без визита в ФНС
+                </div>
+                <div class="header-slider__btn">
+                  <button class="button" id="modalBtn" data-buttonid="Баннер 1">
+                    Как это сделать?
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="header-slider__item">
+              <div class="header-slider__info">
+                <h1>Онлайн-регистрация ИП и ЮЛ</h1>
+                <div class="header-slider__desc">
+                  Верный выбор, если хотите минимизировать риски
+                </div>
+                <div class="header-slider__btn">
+                  <button class="button" id="modalBtn" data-buttonid="Баннер 2">
+                    Узнать больше
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="header-slider__item">
+              <div class="header-slider__info">
+                <h1>Комплексная поддержка бизнеса</h1>
+                <div class="header-slider__desc">
+                  От помощи в регистрации до ПО для отчетности и онлайн-касс
+                </div>
+                <div class="header-slider__btn">
+                  <button class="button" id="modalBtn" data-buttonid="Баннер 3">Подробнее</button>
+                </div>
+              </div>
+            </div>
+            <div class="header-slider__item">
+              <div class="header-slider__info">
+                <h1>Помощь в регистрации ЮЛ и ИП</h1>
+                <div class="header-slider__desc">
+                  Без посещения ИФНС и уплаты дополнительного налога
+                </div>
+                <div class="header-slider__btn">
+                  <button class="button" id="modalBtn" data-buttonid="Баннер 4">
+                    Узнать больше
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="header-slider__item">
+              <div class="header-slider__info">
+                <h1>Комплексная поддержка бизнеса</h1>
+                <div class="header-slider__desc">Чем больше услуг выбрать, тем выгоднее каждая</div>
+                <div class="header-slider__btn">
+                  <button class="button" id="modalBtn" data-buttonid="Баннер 5">
+                    Узнать больше
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="registration" id="registration">
+      <div class="container">
+        <div class="section-title">
+          <h2>Регистрация ЮЛ или ИП</h2>
+        </div>
+        <div class="section-subtitle">пройдет успешно, если обратиться к специалистам</div>
+        <div class="registration__body">
+          <div class="registration__top">
+            Электронная подпись на ФЛ + подготовка и отправка
+            <span class="toltip" id="tolTipDoc">документов</span> на регистрацию + комплексная
+            поддержка на всех ее <span><a href="#step">этапах</a></span>
+          </div>
+          <div class="registration__list">
+            <div class="registration__list-item">
+              <div class="registration__list-ellipse">
+                <p>
+                  ИП <br />
+                  3 000 ₽
+                </p>
+                <button class="button" id="modalBtn" data-buttonid="Регистрация ИП">
+                  Заказать
+                </button>
+              </div>
+            </div>
+            <div class="registration__list-item">
+              <div class="registration__list-ellipse">
+                <p>
+                  ЮЛ <br />
+                  5 000 ₽
+                </p>
+                <button class="button" id="modalBtn" data-buttonid="Регистрация ЮЛ">
+                  Заказать
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="registration__bottom">
+            <b>Бонус:</b> при приобретении этой услуги любая из
+            <span><a href="#dop">дополнительных</a></span> станет выгоднее минимум на <b>10%</b>.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <div class="section-title">
+          <h2>Почему онлайн-регистрация – верный выбор</h2>
+        </div>
+        <div class="section-subtitle">а с <span>«ЦЭК»</span> - верный вдвойне</div>
+        <div class="advantages__list">
+          <div class="advantages__item">
+            <div class="advantages__item-icon">
+              <svg
+                width="53"
+                height="49"
+                viewBox="0 0 53 49"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.336365 0L32.1864 49L52.4545 21.6693L32.1864 37.8259L0.336365 0Z"
+                  fill="#FF6600"
+                />
+              </svg>
+            </div>
+            <div class="advantages__item-body">
+              <div class="advantages__item-title">Экономия средств и времени</div>
+              <div class="advantages__item-content">
+                при подаче заявления в бумажном виде придется уплатить налог (800 руб. для ИП, 4 000
+                руб. – для ЮЛ), а электронные процедуры осуществляются быстрее
+              </div>
+            </div>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__item-icon">
+              <svg
+                width="53"
+                height="49"
+                viewBox="0 0 53 49"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.336365 0L32.1864 49L52.4545 21.6693L32.1864 37.8259L0.336365 0Z"
+                  fill="#FF6600"
+                />
+              </svg>
+            </div>
+            <div class="advantages__item-body">
+              <div class="advantages__item-title">Минимизация рисков</div>
+              <div class="advantages__item-content">
+                с помощью специалистов шанс на успешное прохождение регистрации выше в разы
+              </div>
+            </div>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__item-icon">
+              <svg
+                width="53"
+                height="49"
+                viewBox="0 0 53 49"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.336365 0L32.1864 49L52.4545 21.6693L32.1864 37.8259L0.336365 0Z"
+                  fill="#FF6600"
+                />
+              </svg>
+            </div>
+            <div class="advantages__item-body">
+              <div class="advantages__item-title">Все нужное в одном месте</div>
+              <div class="advantages__item-content">
+                от помощи с регистрацией до ремонта торгового оборудования
+              </div>
+            </div>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__item-icon">
+              <svg
+                width="53"
+                height="49"
+                viewBox="0 0 53 49"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.336365 0L32.1864 49L52.4545 21.6693L32.1864 37.8259L0.336365 0Z"
+                  fill="#FF6600"
+                />
+              </svg>
+            </div>
+            <div class="advantages__item-body">
+              <div class="advantages__item-title">Комплексная поддержка</div>
+              <div class="advantages__item-content">с душой и по любому из возникших вопросов</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="dop" id="dop">
+      <div class="container">
+        <div class="section-title">
+          <h2>Дополнительные услуги</h2>
+        </div>
+        <div class="section-subtitle">понадобятся на старте бизнеса</div>
+        <div class="dop__list">
+          <div class="dop__item">
+            <div class="dop__title">Электронная подпись (ЭП) для руководителя</div>
+            <div class="dop__price">2000 ₽</div>
+            <div class="dop__btn">
+              <button class="button" id="modalBtn" data-buttonid="ЭП для руководителя">
+                Заказать
+              </button>
+            </div>
+          </div>
+          <div class="dop__item">
+            <div class="dop__title">Защищенный сертифицированный носитель для ЭП</div>
+            <div class="dop__price">2000 ₽</div>
+            <div class="dop__btn">
+              <button class="button" id="modalBtn" data-buttonid="Носитель для ЭП">Заказать</button>
+            </div>
+          </div>
+          <div class="dop__item">
+            <div class="dop__title">Техническая поддержка электронной подписи на 12 месяцев</div>
+            <div class="dop__price">2000 ₽</div>
+            <div class="dop__btn">
+              <button class="button" id="modalBtn" data-buttonid="Техподдержка ЭП">Заказать</button>
+            </div>
+          </div>
+          <div class="dop__item">
+            <div class="dop__title">
+              Контрольно-кассовая техника, услуги по ее настройке и регистрации и ПП «1С»
+            </div>
+            <div class="dop__btn">
+              <button class="button" id="modalBtn" data-buttonid="ПО для отчетности">
+                Подробнее
+              </button>
+            </div>
+          </div>
+          <div class="dop__item">
+            <div class="dop__title">
+              ПО для подготовки и сдачи отчетности в контролирующие органы
+            </div>
+            <div class="dop__btn">
+              <button class="button" id="modalBtn" data-buttonid="Счет в банке">
+                Узнать больше
+              </button>
+            </div>
+          </div>
+          <div class="dop__item">
+            <div class="dop__title">Расчетный счет в Банке</div>
+            <div class="dop__btn">
+              <button class="button" onclick="location.href='https://cekat.ru/'">Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="step" id="step">
+      <div class="container">
+        <div class="section-title">
+          <h2>Этапы регистрации ЮЛ или ИП</h2>
+        </div>
+        <div class="section-subtitle">при поддержке специалистов</div>
+        <ul class="step__timeline">
+          <li class="step__item">
+            <div class="step__content">
+              <div class="step__title">ШАГ ПЕРВЫЙ</div>
+              <div class="step__desc">
+                Оставляете
+                <span id="modalBtn" data-buttonid="Заявка на подготовку документов">заявку</span> на
+                подготовку документов без посещения ИФНС
+              </div>
+            </div>
+          </li>
+          <li class="step__item">
+            <div class="step__content">
+              <div class="step__title">ШАГ ВТОРОЙ</div>
+              <div class="step__desc">
+                С вами связывается специалист и ориентирует
+                <span class="toltip" id="tolTipDoc">по документам</span> и процедуре формирования
+                заявления
+              </div>
+            </div>
+          </li>
+          <li class="step__item">
+            <div class="step__content">
+              <div class="step__title">ШАГ ТРЕТИЙ</div>
+              <div class="step__desc">
+                Осуществляется идентификация заявителя для выдачи электронной подписи (необходима
+                при регистрации)
+              </div>
+            </div>
+          </li>
+          <li class="step__item">
+            <div class="step__content">
+              <div class="step__title">ШАГ ЧЕТВЁРТЫЙ</div>
+              <div class="step__desc">Подается заявления на регистрацию в ИП или ЮЛ</div>
+            </div>
+          </li>
+          <li class="step__item">
+            <div class="step__content">
+              <div class="step__title">ШАГ ПЯТЫЙ</div>
+              <div class="step__desc">
+                Это заявление рассматривается в ФНС. Срок – до 5 рабочих дней
+              </div>
+            </div>
+          </li>
+          <li class="step__item">
+            <div class="step__content">
+              <div class="step__title">ШАГ ШЕСТОЙ</div>
+              <div class="step__desc">Регистрация пройдена успешно! Поздравляем!</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contacts-home">
+      <div class="container">
+        <div class="contacts-home__body">
+          <div class="contacts-home__info">
+            <div class="contacts-home__title">
+              <h2>Трудно сделать выбор? Мы поможем!</h2>
+            </div>
+            <div class="contacts-home__desc">Разберемся вместе</div>
+            <div class="contacts-home__btn">
+              <button class="button" id="modalBtn" data-buttonid="Нужна помощь">
+                Проконсультироваться
+              </button>
+            </div>
+          </div>
+          <div class="contacts-home__img">
+            <img src="assets/img/Image-footer.png" alt="Фото" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts-map" id="contacts">
+      <div class="container">
+        <div class="contacts-map__body">
+          <div class="contacts-map__info">
+            <img src="assets/img/logo.png" alt="лого" />
+            <div class="contacts-map__info-desc">
+              <p>
+                Время работы ПН-ЧТ: <br />
+                c 9:00 до 18:00 <br />
+                ПТ: c 9:00 до 17:00 <br />
+                Н. Новгород, ул. Новая 15 <br />
+              </p>
+              <a href="tel:+78314291359">(831) 429-13-59</a>
+            </div>
+          </div>
+          <div class="contacts-map__location">
+            <script
+              type="text/javascript"
+              charset="utf-8"
+              async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A46c1c3825f61bce20cba6c397260eeaf1690c1e7fd08eb4b0920b742a5f50666&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+            ></script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__agreement">
+            <a href="https://cek.ru/polzovatelskoe-soglashenie">Пользовательское соглашение</a>
+          </div>
+          <div class="footer__copy">© ООО ЦЭК 1992 - <span id="year">2022</span></div>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="modalForm"
+      tabindex="-1"
+      aria-labelledby="modalFormLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalFormLabel">Форма обратной связи</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="bitrixForm">
+              <div id="yourClientTarrifToBitrix" hidden="" data-buttonid="none"></div>
+              <div class="mb-3">
+                <label for="inputName" class="form-label">*Имя</label>
+                <input
+                  id="formGroupExampleInput"
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputTel" class="form-label">*Телефон</label>
+                <input
+                  id="formGroupExampleInput2"
+                  name="tel"
+                  type="tel"
+                  class="form-control tel"
+                  id="inputTel"
+                  placeholder="+7 (___) ___-__-__"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputText" class="form-label">Ваше сообщение (не обязательно)</label>
+                <textarea
+                  id="formGroupExampleInput3"
+                  name="text"
+                  class="form-control"
+                  id="inputText"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                  required
+                />
+                <label class="form-check-label" for="flexCheckDefault"
+                  >Я даю согласие на обработку моих персональных данных</label
+                >
+              </div>
+              <button type="submit" class="button">Отправить</button>
+              <div class="mt-3 thnx">
+                <p>Спасибо! Скоро мы с Вами свяжемся.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets\js\scripts.min.js"></script>
+    <script src="https://nalog.cek.ru/js/modal/cek_utm_adv.js" type="module"></script>
+    <script src="https://cek.ru/services/js/cekMetrics.js" type="text/javascript"></script>
+  </body>
+</html>
